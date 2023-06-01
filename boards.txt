@@ -3242,7 +3242,7 @@ GenF3.menu.pnum.OLIMEXINO_STM32F3.build.variant_h=variant_{build.board}.h
 GenF3.menu.pnum.OLIMEXINO_STM32F3.build.variant=STM32F3xx/F303R(B-C)T
 
 # RADIOFEATHER F303CBTx RADIOFEATHER_F303CB
-GenF3.menu.pnum.RADIOFEATHER_F303CB=Hyperion Labs RADIOFEATHER F303CBT8
+GenF3.menu.pnum.RADIOFEATHER_F303CB=CypherFoundry Tech RADIOFEATHER F303CBT8
 GenF3.menu.pnum.RADIOFEATHER_F303CB.upload.maximum_size=131072
 GenF3.menu.pnum.RADIOFEATHER_F303CB.upload.maximum_data_size=32768
 GenF3.menu.pnum.RADIOFEATHER_F303CB.build.board=RADIOFEATHER_F303CB
