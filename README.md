@@ -299,6 +299,7 @@ User can add a STM32 based board following this [wiki](https://github.com/stm32d
 | :green_heart:  | STM32F302R6<br>STM32F302R8 | Generic Board | *2.0.0* |  |
 | :green_heart:  | STM32F303C6<br>STM32F303C8 | Generic Board | *2.4.0* |  |
 | :green_heart:  | STM32F303CB<br>STM32F303CC | Generic Board | *2.0.0* |  |
+| :green_heart:  | STM32F303CB | Cypher Foundry Tech RadioFeather | *2.5.0* | [More info](https://hackaday.io/project/189697-radio-feather-x) |
 | :green_heart:  | STM32F303CC | [RobotDyn Black Pill](https://stm32-base.org/boards/STM32F303CCT6-RobotDyn-Black-Pill) | *1.6.1* | |
 | :green_heart:  | STM32F303K6<br>STM32F303K8 | Generic Board | *2.0.0* |  |
 | :green_heart:  | STM32F303R6<br>STM32F303R8 | Generic Board | *2.4.0* |  |
