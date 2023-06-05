@@ -15,43 +15,48 @@
 /*----------------------------------------------------------------------------
  *        STM32 pins number
  *----------------------------------------------------------------------------*/
-#define PA0                     0
-#define PA1                     1
-#define PA2                     PIN_A2 // USART2_TX
-#define PA3                     PIN_A1 // USART2_RX
+#define PC13                    0 // LED_BUILTIN 
+#define PB12                    1
+#define PB13                    2 // SPI2_SCK
+#define PB14                    3 // SPI2_MISO
+#define PB15                    4 // SPI2_MOSI
+#define PA0                     5
+#define PA1                     6
+#define PB6                     7  // I2C1_SCL
+#define PB7                     8  // I2C1_SDA
+#define PB8                     9  // CAN_RX
+#define PB9                     10 // CAN_TX
+#define PB10                    11 // USART3_TX
+#define PB11                    12 // USART3_RX
+#define PA8                     13
+
+#define PA13                    14 // SWDIO
+#define PA14                    15 // SWCLK
+#define PA15                    16 // JTDIO
+#define PB3                     17 // SWO-JTDO | SPI3_SCK
+#define PB4                     18 // NJTRST | SPI3_MISO
+#define PB5                     19 // SPI3_MOSI
+
 #define PA4                     PIN_A0
-#define PA5                     PIN_A6 // SPI1_SCK
-#define PA6                     PIN_A8 // SPI1_MISO
-#define PA7                     PIN_A7 // SPI1_MOSI
-#define PA8                     8
-#define PA9                     PIN_A10 // USART1_TX
-#define PA10                    PIN_A9  // USART1_RX
-#define PA11                    11 // USB_DM
-#define PA12                    12 // USB_DP 
-#define PA13                    13
-#define PA14                    14
-#define PA15                    15
+#define PA3                     PIN_A1 // USART2_RX
+#define PA2                     PIN_A2 // USART2_TX
 #define PB0                     PIN_A3
 #define PB1                     PIN_A4
 #define PB2                     PIN_A5
-#define PB3                     19 // SPI3_SCK
-#define PB4                     20 // SPI3_MISO
-#define PB5                     21 // SPI3_MOSI
-#define PB6                     22 // I2C1_SCL
-#define PB7                     23 // I2C1_SDA
-#define PB8                     24 // CAN_RX
-#define PB9                     25 // CAN_TX
-#define PB10                    26 // USART3_TX
-#define PB11                    27 // USART3_RX
-#define PB12                    28
-#define PB13                    29 // SPI2_SCK
-#define PB14                    30 // SPI2_MISO
-#define PB15                    31 // SPI2_MOSI
-#define PC13                    32
-#define PC14                    33
-#define PC15                    34
-#define PF0                     35
-#define PF1                     36
+
+#define PA5                     PIN_A6  // SPI1_SCK
+#define PA7                     PIN_A7  // SPI1_MOSI
+#define PA6                     PIN_A8  // SPI1_MISO
+
+#define PA10                    PIN_A9  // USART1_RX
+#define PA9                     PIN_A10 // USART1_TX
+
+#define PA11                    31 // USB_DM
+#define PA12                    32 // USB_DP
+#define PC14                    33 // OSC32_IN
+#define PC15                    34 // OSC32_OUT
+#define PF0                     35 // OSC IN
+#define PF1                     36 // OSC OUT
 
 // Alternate pins number
 #define PA1_ALT1                (PA1  | ALT1)
@@ -95,9 +100,8 @@
 #define NUM_ANALOG_INPUTS       11
 
 // On-board LED pin number
-#define NEOPIXEL                PC13
 #ifndef LED_BUILTIN
-  #define LED_BUILTIN           NEOPIXEL
+  #define LED_BUILTIN           PC13
 #endif
 
 // On-board user button
@@ -110,7 +114,7 @@
   #define PIN_SPI_SS            PA4
 #endif
 #ifndef PIN_SPI_SS1
-  #define PIN_SPI_SS1           PA15
+  #define PIN_SPI_SS1           PNUM_NOT_DEFINED
 #endif
 #ifndef PIN_SPI_SS2
   #define PIN_SPI_SS2           PNUM_NOT_DEFINED
